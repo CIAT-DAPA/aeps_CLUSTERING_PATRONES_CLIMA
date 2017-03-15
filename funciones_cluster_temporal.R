@@ -109,7 +109,7 @@ procesData <- function(climEvent,idVar = "ID",NormMethod=1,vars="ESOL"){
     row.names(sorDataFN) <- events
     
     #write.csv(sorDataF,"climateToCluster.csv")
-    names(nlevents)=unique(climaEventos0[,idVar])
+    #names(nlevents)=unique(climaEventos0[,idVar])
     evenF <- lapply(nlevents,function(x){x[,vars]})
     evenN <- lapply(nleventsN,function(x){x[,vars]})
     
